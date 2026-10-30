@@ -13,3 +13,4 @@
 ^\.zenodo\.json$
 ^dev$
 ^CLAUDE\.md$
+^analysis$
