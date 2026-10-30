@@ -26,4 +26,9 @@ burigangaamr
 \description{
 Zone diameters and interpretations of the Kirby-Bauer disc diffusion test for 50 Pseudomonas aeruginosa isolates from surface water at seven sites along the Buriganga River, Bangladesh, tested against nine antibiotics (450 observations). Tidied from the supplementary tables S3 and S4 of Sharif et al. (2024), doi:10.2166/wh.2024.270, CC BY 4.0.
 }
+\examples{
+head(burigangaamr)
+# interpretations per antibiotic
+table(burigangaamr$antibiotic_code, burigangaamr$interpretation)
+}
 \keyword{datasets}

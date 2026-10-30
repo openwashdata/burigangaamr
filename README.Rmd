@@ -179,12 +179,12 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 ## Example
 
-The plot shows, for each antibiotic, the share of the 50 isolates that
-tested susceptible, intermediate or resistant. Resistance is concentrated in
+The figure `resistance-shares` shows, for each antibiotic, the share of
+the 50 isolates that tested susceptible, intermediate or resistant. Resistance is concentrated in
 cefotaxime and tetracycline, where 88 percent of the isolates were
 resistant, while every isolate was susceptible to piperacillin-tazobactam.
 
-```{r}
+```{r resistance-shares, fig.alt="Horizontal stacked bar chart of the share of the 50 isolates that tested susceptible, intermediate or resistant to each of the nine antibiotics, ordered from the lowest to the highest share resistant"}
 library(burigangaamr)
 library(dplyr)
 library(ggplot2)
@@ -243,6 +243,11 @@ other, and the package keeps the supplement as it is:
   two antibiotic classes.
 - The abstract reports that 4 percent of the isolates (two) were resistant
   to both imipenem and meropenem; in table S4 one isolate is.
+- Table S6 lists ciprofloxacin (CIP) among the nonsusceptible antibiotics
+  of isolate G3a, while tables S3 and S4 record a 35 mm zone and a
+  susceptible result for ciprofloxacin and a resistant result for
+  cefotaxime (CTX) instead. The counts per isolate come from tables S3
+  and S4; the listed codes come from table S6.
 
 The sampling dates and the names of the seven sites are given in the
 article, which is not open to automated readers; the package records the

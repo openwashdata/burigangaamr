@@ -81,7 +81,7 @@ burigangaamr |>
   gt::as_raw_html()
 ```
 
-<div id="jtxlgbjbxe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rrqilhcadv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -342,7 +342,7 @@ burigangaamr_isolates |>
   gt::as_raw_html()
 ```
 
-<div id="wzcierjubk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mdecxzgvlg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -576,7 +576,7 @@ burigangaamr_antibiotics |>
   gt::as_raw_html()
 ```
 
-<div id="lyonnmdvvi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wridsslzsn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -818,11 +818,11 @@ susceptible, from supplementary table S2.
 
 ## Example
 
-The plot shows, for each antibiotic, the share of the 50 isolates that
-tested susceptible, intermediate or resistant. Resistance is
-concentrated in cefotaxime and tetracycline, where 88 percent of the
-isolates were resistant, while every isolate was susceptible to
-piperacillin-tazobactam.
+The figure `resistance-shares` shows, for each antibiotic, the share of
+the 50 isolates that tested susceptible, intermediate or resistant.
+Resistance is concentrated in cefotaxime and tetracycline, where 88
+percent of the isolates were resistant, while every isolate was
+susceptible to piperacillin-tazobactam.
 
 ``` r
 library(burigangaamr)
@@ -854,7 +854,7 @@ shares |>
   theme_minimal()
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" alt="" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-resistance-shares-1.png" alt="Horizontal stacked bar chart of the share of the 50 isolates that tested susceptible, intermediate or resistant to each of the nine antibiotics, ordered from the lowest to the highest share resistant" width="100%" style="display: block; margin: auto;" />
 
 ## Source and changes
 
@@ -886,6 +886,11 @@ other, and the package keeps the supplement as it is:
   resistant to two antibiotic classes.
 - The abstract reports that 4 percent of the isolates (two) were
   resistant to both imipenem and meropenem; in table S4 one isolate is.
+- Table S6 lists ciprofloxacin (CIP) among the nonsusceptible
+  antibiotics of isolate G3a, while tables S3 and S4 record a 35 mm zone
+  and a susceptible result for ciprofloxacin and a resistant result for
+  cefotaxime (CTX) instead. The counts per isolate come from tables S3
+  and S4; the listed codes come from table S6.
 
 The sampling dates and the names of the seven sites are given in the
 article, which is not open to automated readers; the package records the
@@ -902,21 +907,20 @@ Please cite this package using:
 
 ``` r
 citation("burigangaamr")
-#> To cite package 'burigangaamr' in publications use:
+#> If you use this dataset, please cite both the data package and the
+#> original article listed under references.
 #> 
-#>   Schöbitz L (2026). _burigangaamr: Antibiotic Resistance of
-#>   Pseudomonas aeruginosa Isolates from the Buriganga River,
-#>   Bangladesh_. R package version 0.0.0.9000,
+#>   Schöbitz L (2026). "burigangaamr: Antibiotic Resistance of P.
+#>   aeruginosa from the Buriganga River."
 #>   <https://github.com/openwashdata/burigangaamr>.
 #> 
-#> A BibTeX entry for LaTeX users is
+#>   Sharif D, Amin F, Mehbub M, Ratul R (2024). "Distribution and
+#>   antibiotic resistance patterns of Pseudomonas aeruginosa across
+#>   different point sources of pollution in the Buriganga River,
+#>   Bangladesh." _Journal of Water and Health_, *22*(12), 2358-2369.
+#>   doi:10.2166/wh.2024.270 <https://doi.org/10.2166/wh.2024.270>.
 #> 
-#>   @Manual{,
-#>     title = {burigangaamr: Antibiotic Resistance of Pseudomonas aeruginosa Isolates from the
-#> Buriganga River, Bangladesh},
-#>     author = {Lars Schöbitz},
-#>     year = {2026},
-#>     note = {R package version 0.0.0.9000},
-#>     url = {https://github.com/openwashdata/burigangaamr},
-#>   }
+#> To see these entries in BibTeX format, use 'print(<citation>,
+#> bibtex=TRUE)', 'toBibtex(.)', or set
+#> 'options(citation.bibtex.max=999)'.
 ```

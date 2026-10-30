@@ -25,4 +25,9 @@ burigangaamr_isolates
 \description{
 One row per isolate with the counts of resistant and intermediate results, the number of antibiotic classes with resistance, the antibiotics listed as nonsusceptible in supplementary table S6 and the multidrug resistance flag of that table.
 }
+\examples{
+head(burigangaamr_isolates)
+# multidrug resistant isolates per site
+table(burigangaamr_isolates$site, burigangaamr_isolates$multidrug_resistant)
+}
 \keyword{datasets}
