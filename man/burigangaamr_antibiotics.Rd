@@ -26,4 +26,7 @@ burigangaamr_antibiotics
 \description{
 The nine antibiotics of the disc diffusion test with their class, disc content and the zone diameter breakpoints used to interpret the results, from supplementary tables S1 and S2.
 }
+\examples{
+burigangaamr_antibiotics
+}
 \keyword{datasets}

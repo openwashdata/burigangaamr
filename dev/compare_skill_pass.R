@@ -24,10 +24,14 @@ for (f in list.files(file.path(here, "data"), pattern = "\\.rda$")) {
 # NAMESPACE
 report("NAMESPACE", identical(readLines(file.path(here, "NAMESPACE")),
                              readLines(file.path(other, "NAMESPACE"))))
-# man pages: compare without the description paragraphs, which are prose
+# man pages: compare the structure only (name, docType, format header and
+# the variable items); title, description, source and examples are prose
 strip_prose <- function(lines) {
-  lines <- lines[!grepl("^\\\\title\\{|^\\\\description\\{|^\\\\source\\{", lines)]
-  lines
+  keep <- grepl("^\\\\(name|docType|alias|format)\\{", lines) |
+    grepl("^\\s*\\\\item\\{", lines)
+  lines <- lines[keep]
+  # an item line keeps its variable name only; the description is prose
+  sub("^(\\s*\\\\item\\{[^}]*\\}).*$", "\\1", lines)
 }
 for (f in list.files(file.path(here, "man"), pattern = "\\.Rd$")) {
   o <- file.path(other, "man", f)

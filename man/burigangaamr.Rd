@@ -8,7 +8,7 @@
 A tibble with 450 rows and 8 variables
 \describe{
 \item{isolate_id}{Identifier of the Pseudomonas aeruginosa isolate as used in the supplement: the sampling site letter (A to G), the water sample number at that site (1 to 3) and the colony letter (a to d), for example A1a.}
-\item{site}{Sampling site along the Buriganga River, coded A to G as in the supplement. The article describes seven sites that differ in their point source of pollution (industrial, medical waste and municipal waste discharges among them); the supplement does not name them.}
+\item{site}{Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard.}
 \item{antibiotic_code}{Short code of the antibiotic disc as used in the supplement: PIT, CTX, CPM, GEN, AK, MRP, IPM, TE or CIP.}
 \item{antibiotic}{Name of the antibiotic.}
 \item{antibiotic_class}{Class of the antibiotic: Penicillins, Cephalosporins, Aminoglycosides, Carbapenems, Tetracyclines or Fluoroquinolones.}
@@ -25,5 +25,10 @@ burigangaamr
 }
 \description{
 Zone diameters and interpretations of the Kirby-Bauer disc diffusion test for 50 Pseudomonas aeruginosa isolates from surface water at seven sites along the Buriganga River, Bangladesh, tested against nine antibiotics (450 observations). Tidied from the supplementary tables S3 and S4 of Sharif et al. (2024), doi:10.2166/wh.2024.270, CC BY 4.0.
+}
+\examples{
+head(burigangaamr)
+# interpretations per antibiotic
+table(burigangaamr$antibiotic_code, burigangaamr$interpretation)
 }
 \keyword{datasets}
