@@ -12,5 +12,9 @@
 #'   \item{nonsusceptible_antibiotics}{Codes of the antibiotics with a resistant or intermediate result, comma separated, as listed per strain in supplementary table S6.}
 #'   \item{multidrug_resistant}{Whether supplementary table S6 flags the isolate as multidrug resistant, which the article defines as resistance to three or more antibiotic classes. TRUE for 14 isolates; the abstract and table S7 count 13, the difference being isolate B1c, which is resistant to two classes.}
 #' }
+#' @examples
+#' head(burigangaamr_isolates)
+#' # multidrug resistant isolates per site
+#' table(burigangaamr_isolates$site, burigangaamr_isolates$multidrug_resistant)
 #' @source Sharif, D. I., Amin, F., Mehbub, M. H. and Ratul, R. I. (2024). Distribution and antibiotic resistance patterns of Pseudomonas aeruginosa across different point sources of pollution in the Buriganga River, Bangladesh. Journal of Water and Health, 22(12), supplementary table S6 and counts derived from tables S3 and S4. <https://doi.org/10.2166/wh.2024.270>, CC BY 4.0.
 "burigangaamr_isolates"

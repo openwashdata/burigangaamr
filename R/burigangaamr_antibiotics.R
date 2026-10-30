@@ -13,5 +13,7 @@
 #'   \item{breakpoint_intermediate_max}{Largest zone diameter in millimetres that is interpreted as intermediate, from supplementary table S2.}
 #'   \item{breakpoint_susceptible_min}{Smallest zone diameter in millimetres that is interpreted as susceptible, from supplementary table S2.}
 #' }
+#' @examples
+#' burigangaamr_antibiotics
 #' @source Sharif, D. I., Amin, F., Mehbub, M. H. and Ratul, R. I. (2024). Distribution and antibiotic resistance patterns of Pseudomonas aeruginosa across different point sources of pollution in the Buriganga River, Bangladesh. Journal of Water and Health, 22(12), supplementary tables S1 and S2. <https://doi.org/10.2166/wh.2024.270>, CC BY 4.0.
 "burigangaamr_antibiotics"

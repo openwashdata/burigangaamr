@@ -13,5 +13,9 @@
 #'   \item{zone_mm}{Diameter of the zone of inhibition around the disc in millimetres, from supplementary table S3. NA where the supplement shows a dash, which means no zone of inhibition was recorded; every such test is interpreted as resistant.}
 #'   \item{interpretation}{Interpretation of the zone diameter against the breakpoints in burigangaamr_antibiotics, as given in supplementary table S4: susceptible, intermediate or resistant.}
 #' }
+#' @examples
+#' head(burigangaamr)
+#' # interpretations per antibiotic
+#' table(burigangaamr$antibiotic_code, burigangaamr$interpretation)
 #' @source Sharif, D. I., Amin, F., Mehbub, M. H. and Ratul, R. I. (2024). Distribution and antibiotic resistance patterns of Pseudomonas aeruginosa across different point sources of pollution in the Buriganga River, Bangladesh. Journal of Water and Health, 22(12), supplementary tables S3 and S4. <https://doi.org/10.2166/wh.2024.270>, CC BY 4.0.
 "burigangaamr"
