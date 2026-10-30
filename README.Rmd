@@ -42,7 +42,8 @@ Mehbub and Ratul (2024), published under CC BY 4.0 in the Journal of Water
 and Health (see Source and changes below).
 
 **Draft.** This package is not released, has no DOI and may still change.
-The original authors will be notified before the first release.
+The original authors were notified on 30 October 2026 and have until
+20 November 2026 to respond; there is no release before that date.
 
 ## Installation
 
@@ -224,7 +225,8 @@ sources of pollution in the Buriganga River, Bangladesh. *Journal of Water
 and Health*, 22(12). <https://doi.org/10.2166/wh.2024.270>. The article and
 its supplement are published under the Creative Commons Attribution 4.0
 licence. The original authors are listed in the package as data
-contributors; they have not reviewed this package.
+contributors; they were notified on 30 October 2026 and had not reviewed
+the package at that date.
 
 We changed the material. The eight Word tables of the supplement were read
 into R (the script is in `data-raw/data_processing.R`). The two isolate by
