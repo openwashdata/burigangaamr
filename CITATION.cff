@@ -1,0 +1,61 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: If you use this dataset, please cite both the data package and the original
+  article listed under references.
+type: dataset
+license: CC-BY-4.0
+title: 'burigangaamr: Antibiotic Resistance of P. aeruginosa from the Buriganga River'
+version: 0.0.0.9000
+abstract: Antibiotic susceptibility test results of 50 Pseudomonas aeruginosa isolates
+  from surface water at seven sites along the Buriganga River, Bangladesh, tested
+  against nine antibiotics by disc diffusion, with a summary per isolate and the zone
+  diameter breakpoints used. The data are republished from the supplementary tables
+  of Sharif, Amin, Mehbub and Ratul (2024) <https://doi.org/10.2166/wh.2024.270>,
+  Journal of Water and Health, CC BY 4.0.
+authors:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+repository-code: https://github.com/openwashdata/burigangaamr
+url: https://github.com/openwashdata/burigangaamr
+date-released: '2026-10-30'
+contact:
+- family-names: Schöbitz
+  given-names: Lars
+  email: lschoebitz@ethz.ch
+  orcid: https://orcid.org/0000-0003-2196-5015
+keywords:
+- open data
+- washdata
+- antimicrobial resistance
+- Pseudomonas aeruginosa
+- surface water
+- river water
+- Bangladesh
+references:
+- type: article
+  title: Distribution and antibiotic resistance patterns of Pseudomonas aeruginosa
+    across different point sources of pollution in the Buriganga River, Bangladesh
+  authors:
+  - family-names: Sharif
+    given-names: Dilara I
+    orcid: https://orcid.org/0000-0002-5775-620X
+  - family-names: Amin
+    given-names: Forsan
+  - family-names: Mehbub
+    given-names: Md. Hasib
+  - family-names: Ratul
+    given-names: Rakibul Islam
+  journal: Journal of Water and Health
+  year: '2024'
+  volume: '22'
+  issue: '12'
+  doi: 10.2166/wh.2024.270
+  start: '2358'
+  end: '2369'
+

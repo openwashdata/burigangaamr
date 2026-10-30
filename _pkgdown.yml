@@ -1,0 +1,45 @@
+# Standard _pkgdown.yml, written by washr::setup_website() from DESCRIPTION.
+# `url` is the site base URL (canonical links, sitemap.xml, redirects), so it
+# is the Pages URL, never the GitHub repository URL; the repository link lives
+# in home.links below. The analytics header and the funding text come from
+# the Config/washr fields in DESCRIPTION. washr keeps this file as it is on
+# every later run.
+url: https://openwashdata.github.io/burigangaamr/
+template:
+  bslib:
+    brand: _brand.yml
+  bootstrap: 5
+  includes:
+    in_header: |
+      <script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
+
+home:
+  links:
+    - icon: github
+      text: GitHub repository
+      href: https://github.com/openwashdata/burigangaamr
+  sidebar:
+    structure: [links, citation, authors, dev, custom]
+    components:
+      custom:
+        title: Funding
+        text: This project was funded by the [Open Research Data Program of the ETH Board](https://ethrat.ch/en/eth-domain/open-research-data/).
+
+authors:
+  footer:
+    roles: [cre, fnd]
+    text: "Crafted by"
+  sidebar:
+    roles: [cre, aut, ctb]
+    before: "So *who* does the work?"
+    after: "Thanks all!"
+
+# One entry per data object in data/, each under its own descriptive name.
+# Add every new data object here, or the site build stops.
+reference:
+- title: "Data"
+  desc: "Access the burigangaamr datasets"
+  contents:
+  - burigangaamr_antibiotics
+  - burigangaamr_isolates
+  - burigangaamr

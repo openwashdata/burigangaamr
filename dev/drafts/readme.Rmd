@@ -1,0 +1,262 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# burigangaamr
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![R-CMD-check](https://github.com/openwashdata/burigangaamr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/burigangaamr/actions/workflows/R-CMD-check.yaml)
+
+<!-- badges: end -->
+
+The goal of burigangaamr is to provide the antibiotic susceptibility test
+results of 50 *Pseudomonas aeruginosa* isolates from surface water at seven
+sites along the Buriganga River, Bangladesh, as tidy data. The isolates were
+tested against nine antibiotics with the Kirby-Bauer disc diffusion method.
+The data are republished from the supplementary tables of Sharif, Amin,
+Mehbub and Ratul (2024), published under CC BY 4.0 in the Journal of Water
+and Health (see Source and changes below).
+
+**Draft.** This package is not released, has no DOI and may still change.
+The original authors will be notified before the first release.
+
+## Installation
+
+You can install the development version of burigangaamr from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/burigangaamr")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in
+    your browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/burigangaamr/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to three data objects. `burigangaamr` holds one
+row per isolate and antibiotic, `burigangaamr_isolates` one row per isolate,
+and `burigangaamr_antibiotics` one row per antibiotic with the breakpoints
+used to interpret the zone diameters.
+
+```{r}
+library(burigangaamr)
+```
+
+### burigangaamr
+
+The dataset `burigangaamr` contains the zone diameter and its interpretation
+(susceptible, intermediate or resistant) for every isolate and antibiotic.
+It has `r nrow(burigangaamr)` observations and `r ncol(burigangaamr)`
+variables
+
+```{r}
+burigangaamr |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "burigangaamr.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+### burigangaamr_isolates
+
+The dataset `burigangaamr_isolates` contains one row per isolate with the
+number of resistant and intermediate results, the number of antibiotic
+classes with resistance, the antibiotics listed as nonsusceptible in the
+supplement and the multidrug resistance flag. It has
+`r nrow(burigangaamr_isolates)` observations and
+`r ncol(burigangaamr_isolates)` variables
+
+```{r}
+burigangaamr_isolates |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "burigangaamr_isolates.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+### burigangaamr_antibiotics
+
+The dataset `burigangaamr_antibiotics` contains the nine antibiotics with
+their class, the disc content and the zone diameter breakpoints for
+resistant, intermediate and susceptible. It has
+`r nrow(burigangaamr_antibiotics)` observations and
+`r ncol(burigangaamr_antibiotics)` variables
+
+```{r}
+burigangaamr_antibiotics |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "burigangaamr_antibiotics.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example
+
+The plot shows, for each antibiotic, the share of the 50 isolates that
+tested susceptible, intermediate or resistant. Resistance is concentrated in
+cefotaxime and tetracycline, where 88 percent of the isolates were
+resistant, while every isolate was susceptible to piperacillin-tazobactam.
+
+```{r}
+library(burigangaamr)
+library(dplyr)
+library(ggplot2)
+
+shares <- burigangaamr |>
+  count(antibiotic, interpretation) |>
+  group_by(antibiotic) |>
+  mutate(share = n / sum(n)) |>
+  ungroup()
+
+antibiotic_order <- shares |>
+  group_by(antibiotic) |>
+  summarise(resistant = sum(share[interpretation == "resistant"])) |>
+  arrange(resistant) |>
+  pull(antibiotic)
+
+shares |>
+  mutate(antibiotic = factor(antibiotic, levels = antibiotic_order)) |>
+  ggplot(aes(x = share, y = antibiotic, fill = interpretation)) +
+  geom_col() +
+  scale_x_continuous(labels = scales::label_percent()) +
+  scale_fill_manual(values = c(susceptible = "#5B8E7D",
+                               intermediate = "#E1B12C",
+                               resistant = "#B5473B")) +
+  labs(x = "Share of the 50 isolates", y = NULL, fill = NULL,
+       title = "Disc diffusion results per antibiotic") +
+  theme_minimal()
+```
+
+## Source and changes
+
+The data come from the supplementary material of Sharif, D. I., Amin, F.,
+Mehbub, M. H. and Ratul, R. I. (2024). Distribution and antibiotic
+resistance patterns of *Pseudomonas aeruginosa* across different point
+sources of pollution in the Buriganga River, Bangladesh. *Journal of Water
+and Health*, 22(12). <https://doi.org/10.2166/wh.2024.270>. The article and
+its supplement are published under the Creative Commons Attribution 4.0
+licence. The original authors are listed in the package as data
+contributors; they have not reviewed this package.
+
+We changed the material. The eight Word tables of the supplement were read
+into R (the script is in `data-raw/data_processing.R`). The two isolate by
+antibiotic matrices (zone diameters in table S3, interpretations in table
+S4) were reshaped into one observation per isolate and antibiotic, the
+antibiotic codes were expanded with names, classes and disc contents from
+tables S1 and S2, the breakpoints of table S2 were split into numbers, and
+the counts per isolate were derived from the observations. Tables S5, S7
+and S8 are summaries and are not republished; the processing script
+reproduces every percentage of S5 and S8 from the data.
+
+Two statements of the supplement and the article do not agree with each
+other, and the package keeps the supplement as it is:
+
+- Table S6 flags 14 isolates as multidrug resistant, while table S7 and the
+  abstract count 13. The difference is isolate B1c, which is resistant to
+  two antibiotic classes.
+- The abstract reports that 4 percent of the isolates (two) were resistant
+  to both imipenem and meropenem; in table S4 one isolate is.
+
+The sampling dates and the names of the seven sites are given in the
+article, which is not open to automated readers; the package records the
+sites by their letter codes.
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/burigangaamr/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("burigangaamr")
+```

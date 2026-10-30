@@ -1,0 +1,29 @@
+{
+  "title": "Antibiotic Resistance of P. aeruginosa from the Buriganga River",
+  "description": "Antibiotic susceptibility test results of 50 Pseudomonas aeruginosa isolates from surface water at seven sites along the Buriganga River, Bangladesh, tested against nine antibiotics by disc diffusion, with a summary per isolate and the zone diameter breakpoints used. The data are republished from the supplementary tables of Sharif, Amin, Mehbub and Ratul (2024) <doi:10.2166/wh.2024.270>, Journal of Water and Health, CC BY 4.0.",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Schöbitz, Lars",
+      "orcid": "0000-0003-2196-5015"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["open data", "washdata", "antimicrobial resistance", "Pseudomonas aeruginosa", "surface water", "river water", "Bangladesh"],
+  "version": "0.0.0.9000",
+  "communities": [
+    {
+      "identifier": "openwashdata"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/openwashdata/burigangaamr",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "10.2166/wh.2024.270",
+      "relation": "isDerivedFrom"
+    }
+  ]
+}
