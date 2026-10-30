@@ -4,7 +4,8 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("Lars", "Schöbitz", , "lschoebitz@ethz.ch", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2196-5015")),
-    person("Dilara I.", "Sharif", role = "dtc"),
+    person("Dilara I.", "Sharif", role = "dtc",
+           comment = c(ORCID = "0000-0002-5775-620X")),
     person("Forsan", "Amin", role = "dtc"),
     person("Md. Hasib", "Mehbub", role = "dtc"),
     person("Rakibul Islam", "Ratul", role = "dtc")
