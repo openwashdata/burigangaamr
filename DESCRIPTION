@@ -37,5 +37,6 @@ Config/washr/zenodo-community: openwashdata
 Config/washr/brand-source: openwashdata/brand
 Config/washr/version: 1.2.0
 X-schema.org-spatialCoverage: Buriganga River, Bangladesh
+X-schema.org-temporalCoverage: 2023-03-01/2023-05-15
 X-schema.org-keywords: open data, washdata, antimicrobial resistance, Pseudomonas aeruginosa, surface water, river water, Bangladesh
 Config/washr/brand: v1.1.0

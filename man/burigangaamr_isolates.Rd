@@ -8,7 +8,7 @@
 A tibble with 50 rows and 7 variables
 \describe{
 \item{isolate_id}{Identifier of the Pseudomonas aeruginosa isolate as used in the supplement: the sampling site letter (A to G), the water sample number at that site (1 to 3) and the colony letter (a to d), for example A1a.}
-\item{site}{Sampling site along the Buriganga River, coded A to G as in the supplement.}
+\item{site}{Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard.}
 \item{n_resistant}{Number of the nine antibiotics to which the isolate is resistant, counted from the interpretations in burigangaamr.}
 \item{n_intermediate}{Number of the nine antibiotics with an intermediate result, counted from the interpretations in burigangaamr.}
 \item{n_classes_resistant}{Number of antibiotic classes (of six) with at least one resistant result, counted from burigangaamr. Equals the count reported per strain in supplementary table S6.}

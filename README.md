@@ -13,11 +13,12 @@
 
 The goal of burigangaamr is to provide the antibiotic susceptibility
 test results of 50 *Pseudomonas aeruginosa* isolates from surface water
-at seven sites along the Buriganga River, Bangladesh, as tidy data. The
-isolates were tested against nine antibiotics with the Kirby-Bauer disc
-diffusion method. The data are republished from the supplementary tables
-of Sharif, Amin, Mehbub and Ratul (2024), published under CC BY 4.0 in
-the Journal of Water and Health (see Source and changes below).
+at seven sites along the Buriganga River, Bangladesh, sampled from March
+to May 2023, as tidy data. The isolates were tested against nine
+antibiotics with the Kirby-Bauer disc diffusion method. The data are
+republished from the supplementary tables of Sharif, Amin, Mehbub and
+Ratul (2024), published under CC BY 4.0 in the Journal of Water and
+Health (see Source and changes below).
 
 **Draft.** This package is not released, has no DOI and may still
 change. The original authors will be notified before the first release.
@@ -81,7 +82,7 @@ burigangaamr |>
   gt::as_raw_html()
 ```
 
-<div id="rrqilhcadv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vhpmkhmfvi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -190,10 +191,12 @@ factor
 
 <td style="text-align:left;">
 
-Sampling site along the Buriganga River, coded A to G as in the
-supplement. The article describes seven sites that differ in their point
-source of pollution (industrial, medical waste and municipal waste
-discharges among them); the supplement does not name them.
+Sampling site along the Buriganga River between Sadar Ghat and Midford
+Ghat, coded A to G as in the supplement. The article (Table 2) describes
+each site by the nearby source of pollution: A plastic waste and oil
+spills, B ship dockyard, C household waste, D sewage water of Dhaka
+City, E medical waste, F chemical waste of mills and factories, G boat
+dockyard.
 </td>
 
 </tr>
@@ -342,7 +345,7 @@ burigangaamr_isolates |>
   gt::as_raw_html()
 ```
 
-<div id="mdecxzgvlg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bmhxjxrova" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -447,8 +450,12 @@ factor
 
 <td style="text-align:left;">
 
-Sampling site along the Buriganga River, coded A to G as in the
-supplement.
+Sampling site along the Buriganga River between Sadar Ghat and Midford
+Ghat, coded A to G as in the supplement. The article (Table 2) describes
+each site by the nearby source of pollution: A plastic waste and oil
+spills, B ship dockyard, C household waste, D sewage water of Dhaka
+City, E medical waste, F chemical waste of mills and factories, G boat
+dockyard.
 </td>
 
 </tr>
@@ -576,7 +583,7 @@ burigangaamr_antibiotics |>
   gt::as_raw_html()
 ```
 
-<div id="wridsslzsn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rfiqvkeanv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -892,9 +899,12 @@ other, and the package keeps the supplement as it is:
   cefotaxime (CTX) instead. The counts per isolate come from tables S3
   and S4; the listed codes come from table S6.
 
-The sampling dates and the names of the seven sites are given in the
-article, which is not open to automated readers; the package records the
-sites by their letter codes.
+Surface water was sampled from 1 March to 15 May 2023, in the
+pre-monsoon season, at seven points along the river between Sadar Ghat
+and Midford Ghat, each chosen for a nearby source of pollution (article,
+Methods and Table 2); 70 *P. aeruginosa* isolates were obtained and 50
+of them were tested against the nine antibiotics. The site descriptions
+of Table 2 are in the dictionary under `site`.
 
 ## License
 
