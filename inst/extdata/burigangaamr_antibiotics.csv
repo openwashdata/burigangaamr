@@ -1,0 +1,10 @@
+antibiotic_code,antibiotic,antibiotic_class,disc_content,breakpoint_resistant_max,breakpoint_intermediate_min,breakpoint_intermediate_max,breakpoint_susceptible_min
+PIT,Piperacillin-tazobactam,Penicillins,100/10 µg,17,18,21,22
+CTX,Cefotaxime,Cephalosporins,30 µg,14,15,22,23
+CPM,Cefepime,Cephalosporins,30 µg,14,15,17,18
+GEN,Gentamicin,Aminoglycosides,10 µg,12,13,14,15
+AK,Amikacin,Aminoglycosides,30 µg,14,15,16,17
+MRP,Meropenem,Carbapenems,10 µg,15,16,18,19
+IPM,Imipenem,Carbapenems,10 µg,15,16,18,19
+TE,Tetracycline,Tetracyclines,30 µg,14,15,18,19
+CIP,Ciprofloxacin,Fluoroquinolones,5 µg,18,19,24,25

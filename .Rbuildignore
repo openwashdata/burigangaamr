@@ -1,0 +1,14 @@
+^burigangaamr\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^data-raw$
+^LICENSE\.md$
+^pkgdown$
+^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^_brand\.yml$
+^logos$
+^CITATION\.cff$
+^\.zenodo\.json$
+^dev$
