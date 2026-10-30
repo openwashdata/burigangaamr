@@ -37,11 +37,16 @@ for (f in list.files(file.path(here, "man"), pattern = "\\.Rd$")) {
                    strip_prose(readLines(o))))
 }
 # dictionary: every column except description
-d1 <- read.csv(file.path(here, "data-raw", "dictionary.csv"), stringsAsFactors = FALSE)
-d2 <- read.csv(file.path(other, "data-raw", "dictionary.csv"), stringsAsFactors = FALSE)
-keep <- setdiff(union(names(d1), names(d2)), "description")
-report("dictionary.csv columns other than description",
-       identical(d1[intersect(keep, names(d1))], d2[intersect(keep, names(d2))]))
-report("dictionary.csv descriptions (prose, informational only)",
-       identical(d1$description, d2$description))
+d2_path <- file.path(other, "data-raw", "dictionary.csv")
+if (file.exists(d2_path)) {
+  d1 <- read.csv(file.path(here, "data-raw", "dictionary.csv"), stringsAsFactors = FALSE)
+  d2 <- read.csv(d2_path, stringsAsFactors = FALSE)
+  keep <- setdiff(union(names(d1), names(d2)), "description")
+  report("dictionary.csv columns other than description",
+         identical(d1[intersect(keep, names(d1))], d2[intersect(keep, names(d2))]))
+  cat(sprintf("%-55s %s\n", "dictionary.csv descriptions (prose, informational)",
+              if (identical(d1$description, d2$description)) "identical" else "differ"))
+} else {
+  report("dictionary.csv present in the skill pass", FALSE)
+}
 cat(if (ok) "\nRESULT: the two passes differ only in prose\n" else "\nRESULT: differences beyond prose, see above\n")
