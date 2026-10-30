@@ -23,8 +23,12 @@ A tibble with 50 rows and 7 variables
 
 - site:
 
-  Sampling site along the Buriganga River, coded A to G as in the
-  supplement.
+  Sampling site along the Buriganga River between Sadar Ghat and Midford
+  Ghat, coded A to G as in the supplement. The article (Table 2)
+  describes each site by the nearby source of pollution: A plastic waste
+  and oil spills, B ship dockyard, C household waste, D sewage water of
+  Dhaka City, E medical waste, F chemical waste of mills and factories,
+  G boat dockyard.
 
 - n_resistant:
 
@@ -63,3 +67,31 @@ aeruginosa across different point sources of pollution in the Buriganga
 River, Bangladesh. Journal of Water and Health, 22(12), supplementary
 table S6 and counts derived from tables S3 and S4.
 <https://doi.org/10.2166/wh.2024.270>, CC BY 4.0.
+
+## Examples
+
+``` r
+head(burigangaamr_isolates)
+#> # A tibble: 6 × 7
+#>   isolate_id site  n_resistant n_intermediate n_classes_resistant
+#>   <chr>      <fct>       <int>          <int>               <int>
+#> 1 A1a        A               2              1                   2
+#> 2 A1b        A               2              0                   2
+#> 3 A1c        A               2              1                   2
+#> 4 A1d        A               3              1                   2
+#> 5 A2a        A               2              0                   2
+#> 6 A2b        A               1              1                   1
+#> # ℹ 2 more variables: nonsusceptible_antibiotics <chr>,
+#> #   multidrug_resistant <lgl>
+# multidrug resistant isolates per site
+table(burigangaamr_isolates$site, burigangaamr_isolates$multidrug_resistant)
+#>    
+#>     FALSE TRUE
+#>   A     8    0
+#>   B     3    1
+#>   C     4    0
+#>   D     4    4
+#>   E     5    3
+#>   F     3    5
+#>   G     9    1
+```

@@ -54,6 +54,7 @@
     "@type": "Place",
     "name": "Buriganga River, Bangladesh"
   },
+  "temporalCoverage": "2023-03-01/2023-05-15",
   "isBasedOn": ["https://doi.org/10.2166/wh.2024.270"],
   "variableMeasured": [
     {
@@ -104,7 +105,7 @@
     {
       "@type": "PropertyValue",
       "name": "burigangaamr_isolates.site",
-      "description": "Sampling site along the Buriganga River, coded A to G as in the supplement."
+      "description": "Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard."
     },
     {
       "@type": "PropertyValue",
@@ -139,7 +140,7 @@
     {
       "@type": "PropertyValue",
       "name": "burigangaamr.site",
-      "description": "Sampling site along the Buriganga River, coded A to G as in the supplement. The article describes seven sites that differ in their point source of pollution (industrial, medical waste and municipal waste discharges among them); the supplement does not name them."
+      "description": "Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard."
     },
     {
       "@type": "PropertyValue",
@@ -231,6 +232,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
+<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -250,7 +252,7 @@
 <!-- badges: start -->
 
 <!-- badges: end -->
-<p>The goal of burigangaamr is to provide the antibiotic susceptibility test results of 50 <em>Pseudomonas aeruginosa</em> isolates from surface water at seven sites along the Buriganga River, Bangladesh, as tidy data. The isolates were tested against nine antibiotics with the Kirby-Bauer disc diffusion method. The data are republished from the supplementary tables of Sharif, Amin, Mehbub and Ratul (2024), published under CC BY 4.0 in the Journal of Water and Health (see Source and changes below).</p>
+<p>The goal of burigangaamr is to provide the antibiotic susceptibility test results of 50 <em>Pseudomonas aeruginosa</em> isolates from surface water at seven sites along the Buriganga River, Bangladesh, sampled from March to May 2023, as tidy data. The isolates were tested against nine antibiotics with the Kirby-Bauer disc diffusion method. The data are republished from the supplementary tables of Sharif, Amin, Mehbub and Ratul (2024), published under CC BY 4.0 in the Journal of Water and Health (see Source and changes below).</p>
 <p><strong>Draft.</strong> This package is not released, has no DOI and may still change. The original authors will be notified before the first release.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -319,7 +321,7 @@
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu">gt</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu">as_raw_html</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div id="jtxlgbjbxe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vhpmkhmfvi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 
 
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
@@ -465,7 +467,7 @@ site
 factor
 </td>
 <td style="text-align:left;">
-Sampling site along the Buriganga River, coded A to G as in the supplement. The article describes seven sites that differ in their point source of pollution (industrial, medical waste and municipal waste discharges among them); the supplement does not name them.
+Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard.
 </td>
 </tr>
 <tr>
@@ -547,7 +549,7 @@ Interpretation of the zone diameter against the breakpoints in burigangaamr_anti
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu">gt</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu">as_raw_html</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div id="wzcierjubk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bmhxjxrova" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 
 
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
@@ -681,7 +683,7 @@ site
 factor
 </td>
 <td style="text-align:left;">
-Sampling site along the Buriganga River, coded A to G as in the supplement.
+Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard.
 </td>
 </tr>
 <tr>
@@ -752,7 +754,7 @@ Whether supplementary table S6 flags the isolate as multidrug resistant, which t
 <span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu">gt</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu">gt</span><span class="fu">::</span><span class="fu">as_raw_html</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div id="lyonnmdvvi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rfiqvkeanv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 
 
 <table class="table gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
@@ -975,7 +977,7 @@ Smallest zone diameter in millimetres that is interpreted as susceptible, from s
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>The plot shows, for each antibiotic, the share of the 50 isolates that tested susceptible, intermediate or resistant. Resistance is concentrated in cefotaxime and tetracycline, where 88 percent of the isolates were resistant, while every isolate was susceptible to piperacillin-tazobactam.</p>
+<p>The figure <code>resistance-shares</code> shows, for each antibiotic, the share of the 50 isolates that tested susceptible, intermediate or resistant. Resistance is concentrated in cefotaxime and tetracycline, where 88 percent of the isolates were resistant, while every isolate was susceptible to piperacillin-tazobactam.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/burigangaamr" class="external-link">burigangaamr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
@@ -1004,7 +1006,7 @@ Smallest zone diameter in millimetres that is interpreted as susceptible, from s
 <span>  <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Share of the 50 isolates"</span>, y <span class="op">=</span> <span class="cn">NULL</span>, fill <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>       title <span class="op">=</span> <span class="st">"Disc diffusion results per antibiotic"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-11-1.png" alt="" width="100%" style="display: block; margin: auto;"></p>
+<p><img src="reference/figures/README-resistance-shares-1.png" alt="Horizontal stacked bar chart of the share of the 50 isolates that tested susceptible, intermediate or resistant to each of the nine antibiotics, ordered from the lowest to the highest share resistant" width="100%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level2">
 <h2 id="source-and-changes">Source and changes<a class="anchor" aria-label="anchor" href="#source-and-changes"></a>
@@ -1015,8 +1017,9 @@ Smallest zone diameter in millimetres that is interpreted as susceptible, from s
 <ul>
 <li>Table S6 flags 14 isolates as multidrug resistant, while table S7 and the abstract count 13. The difference is isolate B1c, which is resistant to two antibiotic classes.</li>
 <li>The abstract reports that 4 percent of the isolates (two) were resistant to both imipenem and meropenem; in table S4 one isolate is.</li>
+<li>Table S6 lists ciprofloxacin (CIP) among the nonsusceptible antibiotics of isolate G3a, while tables S3 and S4 record a 35 mm zone and a susceptible result for ciprofloxacin and a resistant result for cefotaxime (CTX) instead. The counts per isolate come from tables S3 and S4; the listed codes come from table S6.</li>
 </ul>
-<p>The sampling dates and the names of the seven sites are given in the article, which is not open to automated readers; the package records the sites by their letter codes.</p>
+<p>Surface water was sampled from 1 March to 15 May 2023, in the pre-monsoon season, at seven points along the river between Sadar Ghat and Midford Ghat, each chosen for a nearby source of pollution (article, Methods and Table 2); 70 <em>P. aeruginosa</em> isolates were obtained and 50 of them were tested against the nine antibiotics. The site descriptions of Table 2 are in the dictionary under <code>site</code>.</p>
 </div>
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
@@ -1029,23 +1032,22 @@ Smallest zone diameter in millimetres that is interpreted as susceptible, from s
 <p>Please cite this package using:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"burigangaamr"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; To cite package 'burigangaamr' in publications use:</span></span>
+<span><span class="co">#&gt; If you use this dataset, please cite both the data package and the</span></span>
+<span><span class="co">#&gt; original article listed under references.</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   Schöbitz L (2026). _burigangaamr: Antibiotic Resistance of</span></span>
-<span><span class="co">#&gt;   Pseudomonas aeruginosa Isolates from the Buriganga River,</span></span>
-<span><span class="co">#&gt;   Bangladesh_. R package version 0.0.0.9000,</span></span>
+<span><span class="co">#&gt;   Schöbitz L (2026). "burigangaamr: Antibiotic Resistance of P.</span></span>
+<span><span class="co">#&gt;   aeruginosa from the Buriganga River."</span></span>
 <span><span class="co">#&gt;   &lt;https://github.com/openwashdata/burigangaamr&gt;.</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span><span class="co">#&gt;   Sharif D, Amin F, Mehbub M, Ratul R (2024). "Distribution and</span></span>
+<span><span class="co">#&gt;   antibiotic resistance patterns of Pseudomonas aeruginosa across</span></span>
+<span><span class="co">#&gt;   different point sources of pollution in the Buriganga River,</span></span>
+<span><span class="co">#&gt;   Bangladesh." _Journal of Water and Health_, *22*(12), 2358-2369.</span></span>
+<span><span class="co">#&gt;   doi:10.2166/wh.2024.270 &lt;https://doi.org/10.2166/wh.2024.270&gt;.</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;   @Manual{,</span></span>
-<span><span class="co">#&gt;     title = {burigangaamr: Antibiotic Resistance of Pseudomonas aeruginosa Isolates from the</span></span>
-<span><span class="co">#&gt; Buriganga River, Bangladesh},</span></span>
-<span><span class="co">#&gt;     author = {Lars Schöbitz},</span></span>
-<span><span class="co">#&gt;     year = {2026},</span></span>
-<span><span class="co">#&gt;     note = {R package version 0.0.0.9000},</span></span>
-<span><span class="co">#&gt;     url = {https://github.com/openwashdata/burigangaamr},</span></span>
-<span><span class="co">#&gt;   }</span></span></code></pre></div>
+<span><span class="co">#&gt; To see these entries in BibTeX format, use 'print(&lt;citation&gt;,</span></span>
+<span><span class="co">#&gt; bibtex=TRUE)', 'toBibtex(.)', or set</span></span>
+<span><span class="co">#&gt; 'options(citation.bibtex.max=999)'.</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">

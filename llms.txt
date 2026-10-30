@@ -2,11 +2,12 @@
 
 The goal of burigangaamr is to provide the antibiotic susceptibility
 test results of 50 *Pseudomonas aeruginosa* isolates from surface water
-at seven sites along the Buriganga River, Bangladesh, as tidy data. The
-isolates were tested against nine antibiotics with the Kirby-Bauer disc
-diffusion method. The data are republished from the supplementary tables
-of Sharif, Amin, Mehbub and Ratul (2024), published under CC BY 4.0 in
-the Journal of Water and Health (see Source and changes below).
+at seven sites along the Buriganga River, Bangladesh, sampled from March
+to May 2023, as tidy data. The isolates were tested against nine
+antibiotics with the Kirby-Bauer disc diffusion method. The data are
+republished from the supplementary tables of Sharif, Amin, Mehbub and
+Ratul (2024), published under CC BY 4.0 in the Journal of Water and
+Health (see Source and changes below).
 
 **Draft.** This package is not released, has no DOI and may still
 change. The original authors will be notified before the first release.
@@ -85,7 +86,7 @@ For an overview of the variable names, see the following table.
 | variable_name | variable_type | description |
 |:---|:---|:---|
 | isolate_id | character | Identifier of the Pseudomonas aeruginosa isolate as used in the supplement: the sampling site letter (A to G), the water sample number at that site (1 to 3) and the colony letter (a to d), for example A1a. |
-| site | factor | Sampling site along the Buriganga River, coded A to G as in the supplement. The article describes seven sites that differ in their point source of pollution (industrial, medical waste and municipal waste discharges among them); the supplement does not name them. |
+| site | factor | Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard. |
 | antibiotic_code | factor | Short code of the antibiotic disc as used in the supplement: PIT, CTX, CPM, GEN, AK, MRP, IPM, TE or CIP. |
 | antibiotic | character | Name of the antibiotic. |
 | antibiotic_class | factor | Class of the antibiotic: Penicillins, Cephalosporins, Aminoglycosides, Carbapenems, Tetracyclines or Fluoroquinolones. |
@@ -120,7 +121,7 @@ For an overview of the variable names, see the following table.
 | variable_name | variable_type | description |
 |:---|:---|:---|
 | isolate_id | character | Identifier of the Pseudomonas aeruginosa isolate as used in the supplement: the sampling site letter (A to G), the water sample number at that site (1 to 3) and the colony letter (a to d), for example A1a. |
-| site | factor | Sampling site along the Buriganga River, coded A to G as in the supplement. |
+| site | factor | Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard. |
 | n_resistant | integer | Number of the nine antibiotics to which the isolate is resistant, counted from the interpretations in burigangaamr. |
 | n_intermediate | integer | Number of the nine antibiotics with an intermediate result, counted from the interpretations in burigangaamr. |
 | n_classes_resistant | integer | Number of antibiotic classes (of six) with at least one resistant result, counted from burigangaamr. Equals the count reported per strain in supplementary table S6. |
@@ -163,11 +164,11 @@ For an overview of the variable names, see the following table.
 
 ## Example
 
-The plot shows, for each antibiotic, the share of the 50 isolates that
-tested susceptible, intermediate or resistant. Resistance is
-concentrated in cefotaxime and tetracycline, where 88 percent of the
-isolates were resistant, while every isolate was susceptible to
-piperacillin-tazobactam.
+The figure `resistance-shares` shows, for each antibiotic, the share of
+the 50 isolates that tested susceptible, intermediate or resistant.
+Resistance is concentrated in cefotaxime and tetracycline, where 88
+percent of the isolates were resistant, while every isolate was
+susceptible to piperacillin-tazobactam.
 
 ``` r
 
@@ -200,7 +201,10 @@ shares |>
   theme_minimal()
 ```
 
-![](reference/figures/README-unnamed-chunk-11-1.png)
+![Horizontal stacked bar chart of the share of the 50 isolates that
+tested susceptible, intermediate or resistant to each of the nine
+antibiotics, ordered from the lowest to the highest share
+resistant](reference/figures/README-resistance-shares-1.png)
 
 ## Source and changes
 
@@ -232,10 +236,18 @@ other, and the package keeps the supplement as it is:
   resistant to two antibiotic classes.
 - The abstract reports that 4 percent of the isolates (two) were
   resistant to both imipenem and meropenem; in table S4 one isolate is.
+- Table S6 lists ciprofloxacin (CIP) among the nonsusceptible
+  antibiotics of isolate G3a, while tables S3 and S4 record a 35 mm zone
+  and a susceptible result for ciprofloxacin and a resistant result for
+  cefotaxime (CTX) instead. The counts per isolate come from tables S3
+  and S4; the listed codes come from table S6.
 
-The sampling dates and the names of the seven sites are given in the
-article, which is not open to automated readers; the package records the
-sites by their letter codes.
+Surface water was sampled from 1 March to 15 May 2023, in the
+pre-monsoon season, at seven points along the river between Sadar Ghat
+and Midford Ghat, each chosen for a nearby source of pollution (article,
+Methods and Table 2); 70 *P. aeruginosa* isolates were obtained and 50
+of them were tested against the nine antibiotics. The site descriptions
+of Table 2 are in the dictionary under `site`.
 
 ## License
 
@@ -249,23 +261,22 @@ Please cite this package using:
 ``` r
 
 citation("burigangaamr")
-#> To cite package 'burigangaamr' in publications use:
+#> If you use this dataset, please cite both the data package and the
+#> original article listed under references.
 #> 
-#>   Schöbitz L (2026). _burigangaamr: Antibiotic Resistance of
-#>   Pseudomonas aeruginosa Isolates from the Buriganga River,
-#>   Bangladesh_. R package version 0.0.0.9000,
+#>   Schöbitz L (2026). "burigangaamr: Antibiotic Resistance of P.
+#>   aeruginosa from the Buriganga River."
 #>   <https://github.com/openwashdata/burigangaamr>.
 #> 
-#> A BibTeX entry for LaTeX users is
+#>   Sharif D, Amin F, Mehbub M, Ratul R (2024). "Distribution and
+#>   antibiotic resistance patterns of Pseudomonas aeruginosa across
+#>   different point sources of pollution in the Buriganga River,
+#>   Bangladesh." _Journal of Water and Health_, *22*(12), 2358-2369.
+#>   doi:10.2166/wh.2024.270 <https://doi.org/10.2166/wh.2024.270>.
 #> 
-#>   @Manual{,
-#>     title = {burigangaamr: Antibiotic Resistance of Pseudomonas aeruginosa Isolates from the
-#> Buriganga River, Bangladesh},
-#>     author = {Lars Schöbitz},
-#>     year = {2026},
-#>     note = {R package version 0.0.0.9000},
-#>     url = {https://github.com/openwashdata/burigangaamr},
-#>   }
+#> To see these entries in BibTeX format, use 'print(<citation>,
+#> bibtex=TRUE)', 'toBibtex(.)', or set
+#> 'options(citation.bibtex.max=999)'.
 ```
 
 # Package index

@@ -38,6 +38,7 @@
     "@type": "Place",
     "name": "Buriganga River, Bangladesh"
   },
+  "temporalCoverage": "2023-03-01/2023-05-15",
   "isBasedOn": ["https://doi.org/10.2166/wh.2024.270"],
   "variableMeasured": [
     {
@@ -88,7 +89,7 @@
     {
       "@type": "PropertyValue",
       "name": "burigangaamr_isolates.site",
-      "description": "Sampling site along the Buriganga River, coded A to G as in the supplement."
+      "description": "Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard."
     },
     {
       "@type": "PropertyValue",
@@ -123,7 +124,7 @@
     {
       "@type": "PropertyValue",
       "name": "burigangaamr.site",
-      "description": "Sampling site along the Buriganga River, coded A to G as in the supplement. The article describes seven sites that differ in their point source of pollution (industrial, medical waste and municipal waste discharges among them); the supplement does not name them."
+      "description": "Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard."
     },
     {
       "@type": "PropertyValue",
@@ -212,6 +213,7 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json"></form></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/openwashdata/burigangaamr/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
@@ -243,7 +245,7 @@
 <dd><p>Identifier of the Pseudomonas aeruginosa isolate as used in the supplement: the sampling site letter (A to G), the water sample number at that site (1 to 3) and the colony letter (a to d), for example A1a.</p></dd>
 
 <dt>site</dt>
-<dd><p>Sampling site along the Buriganga River, coded A to G as in the supplement.</p></dd>
+<dd><p>Sampling site along the Buriganga River between Sadar Ghat and Midford Ghat, coded A to G as in the supplement. The article (Table 2) describes each site by the nearby source of pollution: A plastic waste and oil spills, B ship dockyard, C household waste, D sewage water of Dhaka City, E medical waste, F chemical waste of mills and factories, G boat dockyard.</p></dd>
 
 <dt>n_resistant</dt>
 <dd><p>Number of the nine antibiotics to which the isolate is resistant, counted from the interpretations in burigangaamr.</p></dd>
@@ -267,6 +269,33 @@
     <p>Sharif, D. I., Amin, F., Mehbub, M. H. and Ratul, R. I. (2024). Distribution and antibiotic resistance patterns of Pseudomonas aeruginosa across different point sources of pollution in the Buriganga River, Bangladesh. Journal of Water and Health, 22(12), supplementary table S6 and counts derived from tables S3 and S4. <a href="https://doi.org/10.2166/wh.2024.270" class="external-link">https://doi.org/10.2166/wh.2024.270</a>, CC BY 4.0.</p>
     </div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">burigangaamr_isolates</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 6 × 7</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   isolate_id site  n_resistant n_intermediate n_classes_resistant</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> A1a        A               2              1                   2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> A1b        A               2              0                   2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> A1c        A               2              1                   2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> A1d        A               3              1                   2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> A2a        A               2              0                   2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> A2b        A               1              1                   1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 2 more variables: nonsusceptible_antibiotics &lt;chr&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   multidrug_resistant &lt;lgl&gt;</span></span>
+<span class="r-in"><span><span class="co"># multidrug resistant isolates per site</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">burigangaamr_isolates</span><span class="op">$</span><span class="va">site</span>, <span class="va">burigangaamr_isolates</span><span class="op">$</span><span class="va">multidrug_resistant</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     FALSE TRUE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   A     8    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   B     3    1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   C     4    0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   D     4    4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   E     5    3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   F     3    5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   G     9    1</span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
 
