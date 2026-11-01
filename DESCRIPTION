@@ -35,8 +35,12 @@ Config/washr/analytics-domain: openwashdata.github.io
 Config/washr/doi-provider: zenodo
 Config/washr/zenodo-community: openwashdata
 Config/washr/brand-source: openwashdata/brand
-Config/washr/version: 1.2.0
+Config/washr/version: 1.2.2
 X-schema.org-spatialCoverage: Buriganga River, Bangladesh
 X-schema.org-temporalCoverage: 2023-03-01/2023-05-15
 X-schema.org-keywords: open data, washdata, antimicrobial resistance, Pseudomonas aeruginosa, surface water, river water, Bangladesh
 Config/washr/brand: v1.1.0
+Config/washr/publisher: Published by [openwashdata](https://openwashdata.org), a project of [Global Health Engineering](https://ghe.ethz.ch/) at ETH Zurich.
+Config/washr/home: https://openwashdata.org
+Config/washr/catalog: https://openwashdata.org/pages/gallery/data/
+Config/washr/community: This package is part of [openwashdata](https://openwashdata.org). Browse the [data catalogue](https://openwashdata.org/pages/gallery/data/) or get the [newsletter](https://openwashdata.org/pages/newsletter/).

@@ -12,6 +12,10 @@ template:
   includes:
     in_header: |
       <script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
+  opengraph:
+    image:
+      src: https://raw.githubusercontent.com/openwashdata/brand/v1.1.0/assets/social-preview.png
+      alt: openwashdata, social preview image
 
 home:
   links:
