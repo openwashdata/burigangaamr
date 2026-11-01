@@ -256,6 +256,8 @@ Data are available as
 
 ## Citation
 
+Published by openwashdata, <https://openwashdata.org>.
+
 Please cite this package using:
 
 ``` r
